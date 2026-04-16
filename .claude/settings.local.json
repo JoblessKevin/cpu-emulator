@@ -1,0 +1,39 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(python3 *)",
+      "Bash(g++ --version)",
+      "Bash(clang++ --version)",
+      "Read(//usr/**)",
+      "Read(//c/Windows/System32//**)",
+      "Bash(command -v g++)",
+      "Bash(command -v cl)",
+      "Read(//c/msys64/ucrt64/bin/**)",
+      "Bash(/c/msys64/ucrt64/bin/g++.exe --version)",
+      "Bash(mkdir -p build)",
+      "Bash(/c/msys64/ucrt64/bin/cmake.exe -S . -B build -G \"MinGW Makefiles\" -DCMAKE_BUILD_TYPE=Debug -DCMAKE_CXX_COMPILER=/c/msys64/ucrt64/bin/g++.exe -DCMAKE_MAKE_PROGRAM=/c/msys64/ucrt64/bin/mingw32-make.exe)",
+      "Bash(rm -rf build)",
+      "Bash(mkdir build *)",
+      "Bash(/c/msys64/ucrt64/bin/cmake.exe -S . -B build -G \"Ninja\" -DCMAKE_BUILD_TYPE=Debug -DCMAKE_CXX_COMPILER=/c/msys64/ucrt64/bin/g++.exe -DCMAKE_MAKE_PROGRAM=/c/msys64/ucrt64/bin/ninja.exe)",
+      "Bash(echo 'int main\\(\\){return 0;}')",
+      "Bash(/c/msys64/ucrt64/bin/g++.exe /tmp/test.cpp -o /tmp/test.exe)",
+      "Bash(echo \"exit: $?\")",
+      "Bash(/c/msys64/ucrt64/bin/g++.exe /tmp/test.cpp -o /tmp/test.exe -v)",
+      "Bash(/c/msys64/ucrt64/bin/g++.exe /tmp/test.cpp -o /c/tmp/test.exe)",
+      "Bash(/c/msys64/ucrt64/bin/g++.exe -B/c/msys64/ucrt64/lib -L/c/msys64/ucrt64/lib /c/tmp/t.cpp -o /c/tmp/t.exe)",
+      "Bash(/c/msys64/ucrt64/bin/g++.exe -B/c/msys64/ucrt64/lib -L/c/msys64/ucrt64/lib /c/tmp/t.cpp -o /c/tmp/t.exe -v)",
+      "Bash(/c/msys64/ucrt64/bin/g++.exe /c/tmp/t.cpp -o /c/tmp/t.exe -v)",
+      "Bash(/c/msys64/ucrt64/bin/g++.exe /c/tmp/t.cpp -o /c/tmp/t.exe)",
+      "Bash(/c/msys64/ucrt64/bin/g++.exe /c/tmp/t.cpp -S -o /c/tmp/t.s)",
+      "Bash(/c/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/cc1plus.exe /c/tmp/t.cpp -o /c/tmp/t.s)",
+      "Bash(/c/msys64/ucrt64/bin/cmake.exe -S . -B build -G Ninja -DCMAKE_BUILD_TYPE=Debug -DCMAKE_CXX_COMPILER=/c/msys64/ucrt64/bin/g++.exe -DCMAKE_MAKE_PROGRAM=/c/msys64/ucrt64/bin/ninja.exe)",
+      "Bash(/c/msys64/ucrt64/bin/ninja.exe -C build -v)",
+      "Bash(/c/msys64/ucrt64/bin/ninja.exe -C build)",
+      "Bash(./build/rv_emulator.exe)",
+      "Bash(PATH=\"/c/msys64/ucrt64/bin:$PATH\" C:/Users/User/Documents/GitHub/cpu-emulator/build/rv_emulator.exe *)",
+      "Bash(./build/rv_emulator.exe not_an_elf.bin)",
+      "Bash(echo \"hello\")",
+      "Bash(./build/rv_emulator.exe /tmp/fake.bin)"
+    ]
+  }
+}

@@ -1,0 +1,3 @@
+C:/Users/User/Documents/GitHub/cpu-emulator/build/CMakeFiles/rv_emulator.dir
+C:/Users/User/Documents/GitHub/cpu-emulator/build/CMakeFiles/edit_cache.dir
+C:/Users/User/Documents/GitHub/cpu-emulator/build/CMakeFiles/rebuild_cache.dir
